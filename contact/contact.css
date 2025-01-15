@@ -1,0 +1,130 @@
+*{
+
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background:linear-gradient(80deg,#614385 , #516395);
+}
+.logo{
+    top: 0;
+    left: 0;
+    margin-top: 6vh;
+    margin-right: 70vh;
+    margin-bottom: 15px;
+    user-select: none;
+    height:80px;
+}
+.navigation{
+    margin-left: 20vh;
+    margin-right: 5vh;
+}
+.navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 20px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1,p{
+    font-family: 1em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-form h2 {
+    font-family: 1em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
